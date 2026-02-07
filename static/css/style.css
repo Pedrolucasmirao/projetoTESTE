@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+
+  /* 1ª camada (fica por cima): a imagem central */
+  /* 2ª camada (fica por baixo): o degradê branco -> vermelho no topo */
+  background:
+    
+    linear-gradient(to bottom, #ffffff 5%, #000000 90%); /*responsavel pelo */
+
+  /* opcional: mantém “fixo” ao rolar */
+  background-attachment: scroll, scroll;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    align-items: center;        /* alinha verticalmente */
+    justify-content: space-between; /* separa logo e menu */
+    padding: 0 40px; /* espaçamento lateral entre a imagem e o menu */
+    ;
+     
+}
+.imglog{
+    width: 200px;  /* tamanho da imagem */
+    height: auto; /*pode achatar a imagem se n deixar em auto */
+}
+.logo{
+    display: flex;
+    align-items: center;  
+}
+.menu{
+    display: flex;
+    gap: 50px;
+    flex: 1;                 /* deixa o menu ocupar espaço */
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;       /* impede quebrar linha  */
+}
+.menu a{  /*formatação das letras do menu  */
+    font-family: 'Bebas Neue', sans-serif; /*importanod uma fonte do google, utiliza o link*/
+    text-decoration: none; 
+    display: inline-block;   
+    font-size: 30px ;
+    color: rgb(2, 2, 2);
+}
+.menu a:hover{    /* hover=quando o mouse esta em cima  */
+    color:rgb(166, 6, 6);
+    border-top:4px solid #f60101;  /* faz uma "animação"  */
+
+}
+#logo {         /* faz uma "animação", porém como é uma imagem faz assim:  */
+  transition: transform 0.3.s ease;  /* responsavel pelo tempo da animação  */
+}
+
+#logo:hover{
+  transform: translateY(6px);  /* responsavel por mover"  */
+    }
+.header{   
+    height: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /*alinha com o da esqquerda */
+    padding: 0 80px;
+    }
+.introdução{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 105px;/*distancia horizontal */
+    font-size: 18px;
+    max-width: 950px;
+    /*border: 1px solid black;*/
+    /*padding-top:  faz apenas a div=introdução descer, ou seja, margin-top serve pra bloco, padding-top apenas pra uma parte do todo, nesse caso harder>(introdução/imdireita) */
+    }
+.imgdireita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+    width: 550px;
+    height: auto;
+        /*border: 1px solid black;*/
+
+    }
+.mini-vitrini{
+    margin-top:28px;
+    display: flex;
+    gap: 16px;  /*gap=espaço entre as vitrinis*/
+    overflow-x: auto;  /*permite rolagem na horizontal se necessario*/
+    padding-bottom: 10px; /*distancia do card até a barra de scrol*/
+    }
+.mini-vitrine::-webkit-scrollbar{ /*O trilho da barra*/
+    height: 6px;
+}    
+.mini-vitrine::-webkit-scrollbar-thumb{ /*a parte que desliza*/
+    background: black;
+    border-radius: 10px;
+}  
+.card{
+    min-width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px; /*borda de fundo do card*/
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+.card img{
+    width: 100%;
+    border-radius: 6px;
+}
+.card span{
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}  
+.texto-vertical{
+    writing-mode: vertical-rl;
+    position: absolute;
+    
+}
+.assinatura {
+    margin-left: 90px;
+    color: #000000;  
+    font-family: 'Bebas Neue', sans-serif;  
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.assinatura span {
+    font-size: 30px;
+    letter-spacing: 3px;
+    opacity: 0.6;}
+.segunda-parte{
+    border: 1px solid rgb(255, 0, 162);
+    background-color:transparent;
+}    
+.introsegunda{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color:transparent;
+}
+.catalogo {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    
+    height: auto;
+    
+}
+.pcard{
+    display: flex; 
+    flex-direction: column; /*faz com o span ficar na parte de baixo*/
+    gap: 10px;/*distancia da imagme pro span*/
+    box-shadow: 0 6px 14px rgba(0,0,0,.15);
+    text-align: center;
+    min-width: 200px;
+    display: flex;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 10px;
+
+}
+.pcard img{
+    width: 100%;
+    border-radius: 6px;
+}

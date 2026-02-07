@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+  <title>Dip6 Store</title>
+</head>
+<body>
+   <!--parte de cima, logo da dip e menu-->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="https://www.instagram.com/pedro_mirao/" target="_blank"  id="logo"> <!-- aqui eu criei o link, botei pra abrir em outra aba e dei um id pra formatar pelo css -->
+        <img  class= 'imglog' src="{{ url_for('static', filename='img/logosemfundo.png') }}"> <!-- aqui eu botei a logo a mercê do href, ou seja, o link -->
+      </a>
+    </div>
+    <div class='menu'>
+      <a href="../templates/formulario.html">Novidades</a>
+      <a href="#">Masculina</a>
+      <a href="#">Feminina</a>
+    </div>
+  </nav>
+<!--------------------------------------------------------->
+<!--aqui iniciar o header, "primeiro bloco de apresentação da loja"-->
+  <header class="header">
+    <div class="introdução">
+      <h1>A DIP6 é mais do que uma marca — é atitude.</h1>
+        <p>Peças urbanas com identidade, conforto e presença para quem vive o autêntico.</p>
+        <div class="mini-vitrini">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa1.jpeg') }}" alt="">
+            <span>Camisa Drink White</span>
+          </div>    
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa2.jpeg') }}" alt="">
+            <span>Camisa Drink Black</span>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa3.jpeg') }}" alt="">
+            <span>Camisa Fear Hades Black</span>
+          </div>  
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa4.jpeg') }}" alt="">
+            <span>Camisa Zeus</span>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa5.jpeg') }}" alt="">
+            <span>Crazy Money Boss</span>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camisa6.jpeg') }}" alt="">
+            <span>Money Boss White</span>
+          </div>
+        </div>
+    </div>    
+    <div class="imgdip">
+      <img class="imgdireita" src="{{ url_for('static', filename='img/logocentro.png') }}">
+      <div class="assinatura"> 
+        <span>DIP6</span>
+        <span>STREETWEAR</span>
+        <span>MADE IN BRAZIL</span>
+      </div> 
+  </header>
+<!----------------------------------------------------------->  
+<!--segunda parte homepage----------------------------------->
+<div class="segunda-parte">
+    <div class="introsegunda">
+      <h2>ROUPAS MAIS BRABAS DO MERCADO</h2>
+     </div>
+     <div class=catalogo>
+      <div class="pcard">
+        <img src="{{ url_for('static', filename='img/camisa1.jpeg') }}" alt="">
+        <span>Camisa Drink White</span>
+      </div>
+      <div class="pcard">
+        <img src="{{ url_for('static', filename='img/camisa2.jpeg') }}">
+        <span>Camisa Drink Black</span>
+      </div>
+      <div class="pcard">
+        <img src="{{ url_for('static', filename='img/camisa3.jpeg') }}">
+        <span>Camisa Fear Hades Black</span>
+      </div>
+      <div class="pcard">
+        <img src="{{ url_for('static', filename='img/camisa4.jpeg') }}">
+        <span>Camisa Zeus</span>
+      </div>
+      <div class='pcard'>
+        <img src="{{ url_for('static', filename='img/camisa5.jpeg') }}">
+        <span>Crazy Money Boss</span>
+      </div>
+      <div class="pcard">
+        <img src="{{ url_for('static', filename='img/camisa6.jpeg') }}">
+        <span>Money Boss White</span>
+      </div>
+
+     
+       
+   
+    </div>
+
+</div>
+
+
+ 
+ 
+ 
+ 
+</body>
+</html>
