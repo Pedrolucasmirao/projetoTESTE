@@ -1,7 +1,8 @@
 
-# projetoTESTE
-=======
-# Projeto Flask - Em Desenvolvimento
+# Projeto Flask — Em Desenvolvimento
+
+
+
 
 Projeto criado com Flask para estudo de back-end e front-end.
 
