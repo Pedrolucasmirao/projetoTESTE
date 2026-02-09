@@ -1,4 +1,4 @@
-body{
+ body{
   margin: 0;
   min-height: 100vh;
 
@@ -134,11 +134,10 @@ body{
     letter-spacing: 3px;
     opacity: 0.6;}
 .segunda-parte{
-    border: 1px solid rgb(255, 0, 162);
     background-color:transparent;
 }    
 .introsegunda{
-    
+    font-family: 'Bebas Neue', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,15 +145,10 @@ body{
     background-color:transparent;
 }
 .catalogo {
-    gap: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    padding: 20px;
-    
-    height: auto;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px 60px;
 }
 .pcard{
     display: flex; 
@@ -172,4 +166,32 @@ body{
 .pcard img{
     width: 100%;
     border-radius: 6px;
+}
+.img-box{
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.img-box img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .3s ease;
+  
+}
+
+.img-box .costas{
+  opacity: 0;
+}
+
+.pcard:hover .img-box .frente{
+  opacity: 0;
+}
+
+.pcard:hover .img-box .costas{
+  opacity: 1;
 }
