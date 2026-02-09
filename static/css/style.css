@@ -1,24 +1,25 @@
  body{
   margin: 0;
   min-height: 100vh;
+  background-color: #ffffff;
 
   /* 1ª camada (fica por cima): a imagem central */
   /* 2ª camada (fica por baixo): o degradê branco -> vermelho no topo */
   background:
     
     linear-gradient(to bottom, #ffffff 5%, #000000 90%); /*responsavel pelo */
-
+  color:#111;  
   /* opcional: mantém “fixo” ao rolar */
-  background-attachment: scroll, scroll;
+  background-attachment: scroll;
 }
 /* Sobrescreve o dark mode do sistema */
 @media (prefers-color-scheme: dark) {
   body{
-    background: linear-gradient(to bottom, #111, #f2f2f2);
+    background: linear-gradient(to bottom, #ffffff, #000000);
     background-color: #111;
     color: #111;
   }
-}
+}  
 .navbar{
     display: flex;
     height: 100px;
