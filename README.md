@@ -7,7 +7,7 @@
 Projeto criado com Flask para estudo de back-end e front-end.
 
 ##  Status
-Em desenvolvimento
+Em desenvolvimento: https://dip6-store-teste.onrender.com/
 
 ##  Objetivo
 Aprender:
